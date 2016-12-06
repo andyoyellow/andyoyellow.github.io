@@ -1,0 +1,285 @@
+body{
+  background:#f5f5f5;
+}
+.wrapper {
+	float:left;
+	width:270px;
+	margin:50px 0 0 100px;
+}
+/* HIPSTER */
+
+.hipster-head {
+	width: 100px;
+	height: 100px;
+	background: #f3d2b3;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	position:relative;
+	left:10px;
+}
+.hipster-head:before, .hipster-head:after {
+	content:"";
+	position:absolute;
+	display:block;
+	height:20px;
+	width:15px;
+	border-radius: 50%;
+	background-color: #f3d2b3;
+	top:40px;
+	left:-10px;
+	transition: all .1s linear;
+}
+.hipster-head:after {
+	left:95px;
+}
+.hipster-hair {
+	background:#e77e23;
+	width:60px;
+	height:35px;
+	position:absolute;
+	top:55px;
+	-webkit-border-top-right-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius-topright: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+.hipster-hair:before {
+	content:"";
+	background:#e77e23;
+	width:50px;
+	height:20px;
+	position:absolute;
+	top:1px;
+	left:29px;
+	-webkit-border-top-right-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius-topright: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+}
+.hipster-hair:after {
+	content:"";
+	background:#e77e23;
+	width:50px;
+	height:35px;
+	position:absolute;
+	top:38px;
+	left:40px;
+	-webkit-border-top-right-radius: 120px;
+	-webkit-border-bottom-left-radius: 120px;
+	-moz-border-radius-topright: 120px;
+	-moz-border-radius-bottomleft: 120px;
+	border-top-right-radius: 120px;
+	border-bottom-left-radius: 120px;
+	-webkit-transform: rotate(40deg);
+	-moz-transform: rotate(40deg);
+	-ms-transform: rotate(40deg);
+	-o-transform: rotate(40deg);
+}
+.hipster-glasses {
+	background:#7dcec7;
+	width:8px;
+	height:3px;
+	position:relative;
+	top:-50px;
+	left:52px;
+}
+.hipster-glasses:before, .hipster-glasses:after {
+	content:"";
+	display:block;
+	position:absolute;
+	top:-10px;
+	width:25px;
+	height:20px;
+	border: 3px solid #7dcec7;
+	border-radius: 30%;
+}
+.hipster-glasses:before {
+	left:-30px;
+}
+.hipster-glasses:after {
+	left:8px;
+}
+.hipster-eyebrow {
+	width: 12px;
+	height: 5px;
+	border-top-left-radius: 110px;
+	border-top-right-radius: 110px;
+	border: 2px solid #b19479;
+	border-bottom: 0;
+	position:relative;
+	left:70px;
+	top:-70px;
+}
+.hipster-eyebrow:before {
+	content:"";
+	width: 12px;
+	height: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 2px solid #b19479;
+	position:relative;
+	left:-43px;
+	top:7px;
+	display:block;
+	border-bottom:0;
+}
+.hipster-nose {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 27px solid #e2be9c;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	top:-139px;
+	left:46px;
+	position:relative;
+	display:block;
+}
+.hipster-nose:before, .hipster-nose:after {
+	background:#824119;
+	width:5px;
+	height:5px;
+	content:"";
+	display:block;
+	position:relative;
+	border-radius: 100%;
+}
+.hipster-nose:before {
+	left:-23px;
+	top:-2px;
+}
+.hipster-nose:after {
+	left:16px;
+	top:-7px;
+}
+.hipster-beard {
+	width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 20px solid #e77e23;
+	position:relative;
+	top:-155px;
+	left:45px;
+}
+.hipster-body {
+	position:relative;
+	top:-10px;
+	left:7px;
+	width:100px;
+	height:80px;
+	background-color: #9ae6e6;
+	background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 2px, transparent 2px, transparent 60px), repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 2px, transparent 2px, transparent 60px), linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)), linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+	background-size: 32px 60px;
+	-webkit-border-top-right-radius: 100px;
+	-moz-border-radius-topright: 100px;
+	border-top-right-radius: 100px;
+	-webkit-border-top-left-radius: 100px;
+	-moz-border-radius-topleft: 100px;
+	border-top-left-radius: 100px;
+}
+.hipster-neck {
+	background:#f3d2b3;
+	width:30px;
+	height:30px;
+	position:relative;
+	top:-122px;
+	left:43px;
+	-webkit-border-bottom-right-radius: 50px;
+	-moz-border-radius-bottomright: 50px;
+	border-bottom-right-radius: 50px;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-radius-bottomleft: 50px;
+	border-bottom-left-radius: 50px;
+}
+.hipster-mouth {
+	border: 2px solid black;
+	border-radius: 50%;
+	clip: rect(10px, 30px, 30px, 0px);
+	height: 15px;
+	left: 155px;
+	position: absolute;
+	top: 130px;
+	width: 15px;
+}
+.hipster-bag {
+	border-top: 15px solid #b19479;
+	border-left: 2px solid transparent;
+	border-right: 5px solid transparent;
+	height: 0;
+	width: 80px;
+	position:absolute;
+	-webkit-transform: rotate(58deg);
+	-moz-transform: rotate(58deg);
+	-ms-transform: rotate(58deg);
+	-o-transform: rotate(58deg);
+	top:200px;
+}
+.hipster-bag:before {
+	display:block;
+	position:relative;
+	content:"";
+	width:80px;
+	height:2px;
+	border-top:2px dashed #895b3f;
+	top:-4px;
+}
+.hipster-bag:after {
+	display:block;
+	position:relative;
+	content:"";
+	width:80px;
+	height:2px;
+	border-top:2px dashed #895b3f;
+	top:-17px;
+}
+/* Speech bubble */
+
+ .speechbubble {
+	width: 120px;
+	height: 80px;
+	background: #f7f3b3;
+	position: relative;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+   top:-280px;
+   left:30px;
+}
+.speechbubble:before {
+	content:"";
+	position: absolute;
+	right: 100%;
+	top: 26px;
+	width: 0;
+	height: 0;
+	border-top: 13px solid transparent;
+	border-right: 26px solid #f7f3b3;
+	border-bottom: 3px solid transparent;
+}
+
+.speechbubble:after{
+  content:"I was cool before it was popular...♥ ";
+	position: absolute;
+  padding:5px;
+  font-size:14px;
+  color:#c5ab86;
+  text-align:center;
+  font-family: "Times New Roman", Times, serif;
+}
