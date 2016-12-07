@@ -3,9 +3,9 @@
  * The base configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * Secret Keys, and ABSPATH. You can find more information by visiting
+ * {@link http://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
+ * Codex page. You can get the MySQL settings from your web host.
  *
  * This file is used by the wp-config.php creation script during the
  * installation. You don't have to use the web site, you can just copy this file
@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'yellowl6_wor1');
+define('DB_NAME', 'yellowl6_wo4087');
 
 /** MySQL database username */
-define('DB_USER', 'yellowl6_wor1');
+define('DB_USER', 'yellowl6_wo4087');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'RIk47PwA');
+define('DB_PASSWORD', '23P5h14YxwmG');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'aEcKoa=00Sw!1_G;_#.[#9g&,K|JTY=lj+rIyqh+8dY:vV|U<;)f_ =1mt}ifF`(');
-define('SECURE_AUTH_KEY',  '}-.w#U.Szv~3_&HQ!kmCX8a6+8lr)YSbz1n=Vh.{ot;L,@QQ<o8({cQ[qg?}$N~r');
-define('LOGGED_IN_KEY',    'T(1P/$wFBV|WDVUG{He|+iC%S- ag3F=IxHu7<k|;`y`&2W,~fN][jxB0lq>v,!2');
-define('NONCE_KEY',        'Op$e%j r-Vd~Z!Osd_K0szf5n$T*&Mn4}jZs r;,|pKgaV`g$N31.rjE<UPf$w%]');
-define('AUTH_SALT',        ' 6p7ZMpEy0%2e>.jYQ npI?*@5)hHs*|zCZ%f`$.,U M}~V5,pB.,xr4r[QEX}R[');
-define('SECURE_AUTH_SALT', 'FY*54RJ6f>4~2a=c!W(fkq5NAnsLbiF<_VDSl`D^94o!zH*/[Q]z]_V3(@!lZC`B');
-define('LOGGED_IN_SALT',   'TN`9A9scBm6DcB~{7MHG.M{WXP-r4o/7|KbjjTX8qR~V1My&tfAux.JYT|pu-|6F');
-define('NONCE_SALT',       '*SQ^??_J-]TFHD3[fH_U+K03HYv/tPFb-m=I)6]K|AGA:iuB9:;GnbnA6*=;m Jy');
+define('AUTH_KEY', 'lsw&[r-THuf-<Mb-<W+Cv$g>&@h!AUyZmuGAd_<]a+-KWYa+$l-=zKMB-]}YY%dm;/jib-eewrAvczb=BIpKcp;h&o^R+fRXTSzfM%DgzASfLc+TsZPsgOuW{&vkqNm>');
+define('SECURE_AUTH_KEY', 'R+{fhapMuRyS(qpI(E{@NtoLi(zGv_*-VR[fDy+)A*S{qptuMBzkIb$UW/wTDndLAP<jGJpPtr?IwuTr}C}B_%UxY+{b)mqS^@yM-E=Gta+c}&}*Q_[(i%>DJD*Oe}hg');
+define('LOGGED_IN_KEY', 'Bt}gBqD}E}sBX&{X!L}USn/J(FR}!qt}Mx!$Pxw>lU$m}_K_p$!j+;Y&Mx{J@LYF+cNaud<|*;TZwpe+(ms_{-&OD<Lq|<[mFb_;|i/Nb$qcyDHe]c_fibw(mKVOK;A^');
+define('NONCE_KEY', '_uyecQ|xPR=$crxnQeC+(u&Evha<-]?%!hyl;QrkJ[MHcu;hmBKKjT=olbvmJ?FM|Fp-[LICN%A%&i[LdcI$Faxy}CZxtaY_v%+j*wZmnq-DbPF!Hv??>QbCRY<Y+YsU');
+define('AUTH_SALT', 'Z^]{MQo^qx;L?}W_euO)OjHKbqJ<V_zZV&syZrV)aV[m-dHlLU+rgq*k/T*Uu%%l^t!j@m?vY;M-yjeCsn(KAApBHjTdrEc(InNSN@{DdkwY|F>wNsd(S<;hD|WrIL<B');
+define('SECURE_AUTH_SALT', ')Vafq!L;FA<(D[SL)B|nU!mDfCS}|ez;t%Z;!&U(?k%{(o(KrL)<vL)UBv@OZyJ/LmHyoGVfvlrKiv(|Q/lnJaOHd^*mn$YpX/oQfSx<ZOv!jknHIK&O&RsAeiRgbG&%');
+define('LOGGED_IN_SALT', 'tWDPJMILhsoHyTKt@^mQbB|HEGxl$qveqfAabzDZE+QbIh>e?^(/Lr+aCIQ?P+HwJUpO*-QAi+xSGd^gyQBbBQY;D<dWOLaFisA)fdw($;gMBthzv!k!GWZ-fvUiqnIc');
+define('NONCE_SALT', '}rz;*Si<Cxs^>)Oo-c;!NCS}u%^csApj|eLP^hL[XdipV+<ka^G|*qxG!?Y-|$&@OVWGzwLOQG?K^zxV=vhDW[I*IMNHr<])%gZz;P@]Gy|A?ZD>|>G>MA^LWQ|Jl[C|');
 
 /**#@-*/
 
@@ -59,17 +59,7 @@ define('NONCE_SALT',       '*SQ^??_J-]TFHD3[fH_U+K03HYv/tPFb-m=I)6]K|AGA:iuB9:;G
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'vhd_';
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress. A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
- * language support.
- */
-define('WPLANG', '');
+$table_prefix = 'wp_cijr_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -88,3 +78,12 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+/**
+ * Include tweaks requested by hosting providers.  You can safely
+ * remove either the file or comment out the lines below to get
+ * to a vanilla state.
+ */
+if (file_exists(ABSPATH . 'hosting_provider_filters.php')) {
+	include('hosting_provider_filters.php');
+}

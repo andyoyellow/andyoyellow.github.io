@@ -1,1 +1,0 @@
-[22-Jun-2015 21:55:21 America/Denver] PHP Fatal error:  Call to undefined function add_action() in /home1/yellowl6/public_html/blog/wp-content/plugins/hello.php on line 60

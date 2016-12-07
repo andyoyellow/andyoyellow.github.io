@@ -145,8 +145,13 @@ class Jetpack_Display_Posts_Widget extends WP_Widget {
 			apply_filters( 'jetpack_widget_name', __( 'Display WordPress Posts', 'jetpack' ) ),
 			array(
 				'description' => __( 'Displays a list of recent posts from another WordPress.com or Jetpack-enabled blog.', 'jetpack' ),
+				'customize_selective_refresh' => true,
 			)
 		);
+
+		if ( is_customize_preview() ) {
+			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		}
 	}
 
 	/**
@@ -723,11 +728,14 @@ class Jetpack_Display_Posts_Widget extends WP_Widget {
 	 * @param array $instance
 	 */
 	public function widget( $args, $instance ) {
+		/** This action is documented in modules/widgets/gravatar-profile.php */
+		do_action( 'jetpack_stats_extra', 'widget_view', 'display_posts' );
 
 		/** This filter is documented in core/src/wp-includes/default-widgets.php */
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		wp_enqueue_style( 'jetpack_display_posts_widget', plugins_url( 'wordpress-post-widget/style.css', __FILE__ ) );
+		// Enqueue front end assets.
+		$this->enqueue_scripts();
 
 		echo $args['before_widget'];
 
@@ -880,6 +888,15 @@ class Jetpack_Display_Posts_Widget extends WP_Widget {
 		}
 
 		return $errors;
+	}
+
+	/**
+	 * Enqueue CSS and JavaScript.
+	 *
+	 * @since 4.0.0
+	 */
+	public function enqueue_scripts() {
+		wp_enqueue_style( 'jetpack_display_posts_widget', plugins_url( 'wordpress-post-widget/style.css', __FILE__ ) );
 	}
 
 	/**

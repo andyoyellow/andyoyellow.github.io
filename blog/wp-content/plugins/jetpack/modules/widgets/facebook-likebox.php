@@ -58,7 +58,6 @@ class WPCOM_Widget_Facebook_LikeBox extends WP_Widget {
 	}
 
 	function widget( $args, $instance ) {
-
 		extract( $args );
 
 		$like_args = $this->normalize_facebook_args( $instance['like_args'] );
@@ -113,8 +112,8 @@ class WPCOM_Widget_Facebook_LikeBox extends WP_Widget {
 		wp_enqueue_script( 'jetpack-facebook-embed' );
 		echo $after_widget;
 
-		/** This action is already documented in modules/widgets/gravatar-profile.php */
-		do_action( 'jetpack_stats_extra', 'widget', 'facebook-likebox' );
+		/** This action is documented in modules/widgets/gravatar-profile.php */
+		do_action( 'jetpack_stats_extra', 'widget_view', 'facebook-likebox' );
 	}
 
 	function update( $new_instance, $old_instance ) {
@@ -288,7 +287,7 @@ class WPCOM_Widget_Facebook_LikeBox extends WP_Widget {
 	 * @deprecated
 	 */
 	function guess_locale_from_lang( $lang ) {
-		_deprecated_function( __METHOD__, '3.10', 'Jetpack::guess_locale_from_lang()' );
+		_deprecated_function( __METHOD__, '4.0.0', 'Jetpack::guess_locale_from_lang()' );
 		Jetpack::$instance->get_locale_from_lang( $lang );
 	}
 
@@ -296,7 +295,7 @@ class WPCOM_Widget_Facebook_LikeBox extends WP_Widget {
 	 * @deprecated
 	 */
 	function get_locale() {
-		_deprecated_function( __METHOD__, '3.10', 'Jetpack::get_locale()' );
+		_deprecated_function( __METHOD__, '4.0.0', 'Jetpack::get_locale()' );
 		Jetpack::$instance->get_locale();
 	}
 }

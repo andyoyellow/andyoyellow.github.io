@@ -1,61 +1,310 @@
-<!doctype html>
-<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
-<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
-<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="">
-<!--<![endif]-->
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Untitled Document</title>
-<link href="boilerplate.css" rel="stylesheet" type="text/css">
-<link href="Layout-1.css" rel="stylesheet" type="text/css">
-<!-- 
-To learn more about the conditional comments around the html tags at the top of the file:
-paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-
-Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
-* insert the link to your js here
-* remove the link below to the html5shiv
-* add the "no-js" class to the html tags at the top
-* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+<!DOCTYPE HTML>
+<!--
+	Inspired by Directive by HTML5 UP | html5up.net | @n33co
+	customized and modified by Andrew S. Huang
 -->
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-<script src="respond.min.js"></script>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+<html>
+	<head>
+		<title>Andrew's Home</title>
+		<link rel="icon" href="images/AndrewHUANGlogo.png">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<nav>
+		    <div class="site-width">
+		      <span class="menu icon" title="Menu (Esc)" tabindex="0">
 
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
+		      <svg width="52" height="52">
+				   <g id="cross_svg">
+				    <rect id="Rectangle-1"  x="0" y="0" width="48" height="2" fill="transparent"></rect>
+				    <rect id="Rectangle-2"  x="0" y="14" width="48" height="2" fill="transparent"></rect>
+				    <rect id="Rectangle-4"  x="0" y="28" width="48" height="2" fill="transparent"></rect>
+				  </g>
+				</svg>
+				</span>
+		    </div>
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-</script>
+		    <div id="navigation">
+		      <ul>
+		      	<li><span>Go home</span><a href="http://andy.yellowfanpig.com" class="home" title="Home">Main page</a></li>
+		        <li><span>The man behind this site</span><a href="http://andy.yellowfanpig.com/aboutme.html" class="about" title="About me">About me</a></li>
+		        <li><span>Interesting things I made</span><a href="http://andy.yellowfanpig.com/portfolio.html" class="portfolio" title="Work I've Done">Work I've Done</a></li>
+		        <li><span>Interesting things I like</span><a href="http://andy.yellowfanpig.com/workIAdmire.html" class="portfolio" title="Work I Admire">Work I Admire</a></li>
+		        <li><span>Cool words I wrote</span><a href="http://andy.yellowfanpig.com/blog" class="blog" title="My Blog">My Blog</a></li>
+		        <li><span>Where you can find me</span><a href="#footer" class="contact" title="Contact Me">Contact Me</a></li>
+		      </ul>
+		    </div>
+		</nav>
 
-<link rel="icon" 
-      type="image/png" 
-      href="../pictures/favicon.png">
-</head>
-<body onLoad="MM_preloadImages('pictures/landingpagehover.png')">
-<div class="gridContainer clearfix">
-  <h1 align="center" class="fluid heading1"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hollow','','pictures/landingpagehover.png',1)"><img id="hollow" src="pictures/landingpage.png" alt=""></a></h1>
-</div>
-</body>
+
+		<!-- Header -->
+			<div id="header">
+				<span class="icon andyCustom"><img src="images/AndrewHUANGlogo-01.svg"></span>
+				<h1>Hello there, I'm Andrew</h1>
+				<p>I'm currently a graduate student at UC Berkeley <br> Focusing on User Experience and Product Management</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<header class="major container 75%">
+					<h2>I'm learning methods and systems for
+					<br />
+					user centered design
+					<br />
+					to improve everything around me </h2>
+					<!--
+					<p>Tellus erat mauris ipsum fermentum<br />
+					etiam vivamus nunc nibh morbi.</p>
+					-->
+				</header>
+
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="aboutme.html" class="image icon"><img src="images/CookieFaceSmall.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="aboutme.html">My story</a></h3>
+							<p>In the past I've worked at a big bank, a boutique hotel, an educational non-profit, as well as for myself. I've been a manager, trader, technician, designer, and an over-all problem solver.<br><a href="aboutme.html">Full story here</a></p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="portfolio.html" class="image icon fa-code"><img src="images/postit.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="portfolio.html">My portfolio</a></h3>
+							<p>I like to work on tough problems: Can Google Glass help the blind navigate better? How can we help millenials improve their financial health?<br><a href="portfolio.html">Answers here</a></p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="/blog" class="image icon fa-rss"><img src="images/mirrorNeon.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="/blog">Latest blog entry</a></h3>
+							<p>Here is where I practice how to use my words.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="workIAdmire.html" class="image icon"><img src="images/chocolatexture01_akihiro_yoshida.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="workIAdmire.html">Work I admire</a></h3>
+							<p>I believe in continuous learning. Here are the works of creators, developers, and artists that have informed and inspired my education.</p>
+						</div>
+					</section>
+					<!-- <section class="feature left">
+						<a href="https://www.flickr.com/photos/andywangme/sets/72157648248576574" class="image icon"><img src="images/CookieBiteTiny.jpg" alt="" /></a>
+						<div class="content">
+							<h3><a href="https://www.flickr.com/photos/andywangme/sets/72157648248576574">Misc fun</a></h3>
+							<p>I bet you were wondering if I actually ate that cookie of my face. Well here's how it went down. If you want to get even more personal, feel free to explore some of my random experiments.</p>
+						</div>
+					</section> -->
+				</div>
+
+
+				<footer class="major container 75%">
+					<h3>I hope you've enjoyed your time here!</h3>
+					<p>Please do visit again.</p>
+					<!-- <ul class="actions">
+						<li><a href="#" class="button">Send Andrew some words</a></li>
+					</ul> -->
+				</footer>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container 75%">
+
+					<header class="major last">
+						<h2>Questions or comments?</h2>
+					</header>
+
+					<p>I might not have all the answers, but I always enjoy a good discussion.</p>
+
+					<ul class="actions">
+						<li><a href="mailto:andrew.huang@gmail.com" class="button">Start a conversation</a></li>
+					</ul>
+
+					<ul class="icons">
+						<li><a href="https://twitter.com/andyoyellow" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/andrew.huang" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="http://instagram.com/andyoyellow" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/andyoyellow" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/andyoyellow" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Andrew S. Huang. All rights reserved.</li><li>Logo lovingly designed by: <a href="http://philina.me/">Philina Fan</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Start of navigation js -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script>
+    var previousScroll = 0, // previous scroll position
+        menuOffset = 0, // height of menu (once scroll passed it, menu is hidden)
+        detachPoint = 0, // point of detach (after scroll passed it, menu is fixed)
+        hideShowOffset = 6; // scrolling value after which triggers hide/show menu
+
+    // on scroll hide/show menu
+    $(window).scroll(function() {
+      if (!$('nav').hasClass('expanded')) {
+        var currentScroll = $(this).scrollTop(), // gets current scroll position
+            scrollDifference = Math.abs(currentScroll - previousScroll); // calculates how fast user is scrolling
+
+        // if scrolled past menu
+        if (currentScroll > menuOffset) {
+          // if scrolled past detach point add class to fix menu
+          if (currentScroll > detachPoint) {
+            if (!$('nav').hasClass('detached'))
+              $('nav').addClass('detached');
+          }
+
+          // if scrolling faster than hideShowOffset hide/show menu
+          if (scrollDifference >= hideShowOffset) {
+            if (currentScroll > previousScroll) {
+              // scrolling down; hide menu
+              if (!$('nav').hasClass('invisible'))
+                $('nav').addClass('invisible');
+            } else {
+              // scrolling up; show menu
+              if ($('nav').hasClass('invisible'))
+                $('nav').removeClass('invisible');
+            }
+          }
+        } else {
+          // only remove “detached” class if user is at the top of document (menu jump fix)
+          if (currentScroll <= 0){
+            $('nav').removeClass();
+          }
+        }
+
+        // if user is at the bottom of document show menu
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          $('nav').removeClass('invisible');
+        }
+
+        // replace previous scroll position with new one
+        previousScroll = currentScroll;
+      }
+    })
+
+    // shows/hides navigation’s popover if class "expanded"
+    $('nav').on('click touchstart', function(event) {
+      showHideNav();
+      event.preventDefault();
+    })
+
+    // clicking anywhere inside navigation or heading won’t close navigation’s popover
+    $('#navigation').on('click touchstart', function(event){
+        event.stopPropagation();
+    })
+
+    // checks if navigation’s popover is shown
+    function showHideNav() {
+      if ($('nav').hasClass('expanded')) {
+        hideNav();
+      } else {
+        showNav();
+      }
+    }
+
+    // shows the navigation’s popover
+    function showNav() {
+      $('nav').removeClass('invisible').addClass('expanded');
+      $('#container').addClass('blurred');
+      window.setTimeout(function(){$('body').addClass('no_scroll');}, 200); // Firefox hack. Hides scrollbar as soon as menu animation is done
+      $('#navigation a').attr('tabindex', ''); // links inside navigation should be TAB selectable
+    }
+
+    // hides the navigation’s popover
+    function hideNav() {
+      $('#container').removeClass('blurred');
+      window.setTimeout(function(){$('body').removeClass();}, 10); // allow animations to start before removing class (Firefox)
+      $('nav').removeClass('expanded');
+      $('#navigation a').attr('tabindex', '-1'); // links inside hidden navigation should not be TAB selectable
+      $('.icon').blur(); // deselect icon when navigation is hidden
+    }
+
+    //hides the nav popover when clicking on contact
+    $('.contact').on('click touchstart', function(event){
+        hideNav();
+    })
+
+    // keyboard shortcuts
+    $('body').keydown(function(e) {
+      // menu accessible via TAB as well
+      if ($("nav .icon").is(":focus")) {
+        // if ENTER/SPACE show/hide menu
+        if (e.keyCode === 13 || e.keyCode === 32) {
+          showHideNav();
+          e.preventDefault();
+        }
+      }
+
+      // if ESC show/hide menu
+      if (e.keyCode === 27 || e.keyCode === 77) {
+        showHideNav();
+        e.preventDefault();
+      }
+    })
+
+/* start of insert from css cross */
+    $(document).ready(function(){
+
+	  var svg = $('nav');
+	  // var nav = $('nav');
+	  var contact = $('contact');
+	  var lines = svg.find('rect');
+	  var line_first = $('svg rect:nth-child(1)')
+	  var line_second = $('svg rect:nth-child(2)')
+	  var line_third = $('svg rect:nth-child(3)')
+	  var i = true;
+
+	  svg.on('click', function(){
+	    if (i) {
+	      setTimeout(function(){
+	        $(this).find("g").addClass('gotcha')
+
+	        line_first.css({
+	          'transform':'rotate(45deg)',
+	          'left':'50%',
+	          'top':'50%',
+	          'width':'52px',
+	          // This line BELONGS to @dervondenbergen :D
+	          // Enjoy your propriety my friend.
+	          'transform-origin': 'left bottom'
+	        })
+	        line_third.css({
+	          'transform':'rotate(-45deg) translate(-50%,-50%)',
+	          'left':'50%',
+	          'top':'50%'
+	        })
+	        line_second.css('opacity','0')
+	      },005)
+	    } else {
+	      setTimeout(function(){
+	        line_first.attr('style', '');
+	        line_third.attr('style', '');
+	        line_second.css('opacity','1')
+	      },005)
+	    }
+	    i=!i;
+	  });
+	});
+
+  </script>
+
+	</body>
 </html>

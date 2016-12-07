@@ -1,2 +1,0 @@
-[06-Dec-2013 02:10:26 UTC] PHP Strict Standards:  call_user_func_array() expects parameter 1 to be a valid callback, non-static method Jetpack_Post_By_Email::module_toggle() should not be called statically in /home1/yellowl6/public_html/wp-includes/plugin.php on line 429
-[28-May-2014 16:32:05 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'vaultpress_jetpack_more_info_connected' not found or invalid function name in /home1/yellowl6/public_html/blog/wp-includes/plugin.php on line 470
